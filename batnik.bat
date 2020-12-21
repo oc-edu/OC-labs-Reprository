@@ -1,0 +1,13 @@
+
+wmic OS get Name,Version /format:list
+wmic CPU get Name,NumberOfCores,NumberOfLogicalProcessors,Maxclockspeed /format:list
+wmic memorychip get manufacturer,speed,Capacity,DeviceLocator,PartNumber /format:list
+wmic baseboard get manufacturer, product /format:list
+wmic diskdrive get model,size /format:list
+wmic logicaldisk get deviceid,size,freespace,volumename /format:list
+wmic printer list status
+wmic service list brief
+wmic process list brief
+pause
+
+
